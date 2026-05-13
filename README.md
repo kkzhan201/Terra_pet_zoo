@@ -1,6 +1,6 @@
-# Codex Pet Library
+# Terra Pet Zoo
 
-一个 Codex 自定义桌宠库，收集角色宠物化的 fan-made 宠物包。每个宠物都按 Codex custom pet 格式提供 `pet.json` 和 `spritesheet.webp`，可以单独安装。
+`Terra_pet_zoo` 是一个泰拉大陆主题的 Codex pet zoo，收集角色宠物化的 fan-made 桌宠包。每个宠物都按 Codex custom pet 格式提供 `pet.json` 和 `spritesheet.webp`，可以单独安装。
 
 > 非官方 fan-made 项目。本仓库不隶属于、也不代表任何游戏、发行方或权利方。
 
@@ -16,9 +16,9 @@
 把下面整段发给 Codex、Claude Code 或其他 coding agent。将 `<owner>` 替换成仓库所属账号，`<pet-id>` 替换成要安装的宠物目录名，例如 `susie-paw`。
 
 ```text
-请帮我从当前 Codex 宠物库安装一个自定义桌宠。
+请帮我从 Terra Pet Zoo 安装一个 Codex 自定义桌宠。
 
-仓库：当前 GitHub 仓库 `susie_paw`
+仓库：当前 GitHub 仓库 `Terra_pet_zoo`
 宠物 ID：<pet-id>
 源文件：
 - pets/<pet-id>/pet.json
@@ -37,7 +37,7 @@
 
 PET_ID="<pet-id>"
 PET_HOME="${CODEX_HOME:-$HOME/.codex}/pets/$PET_ID"
-REPO_RAW_BASE="https://raw.githubusercontent.com/<owner>/susie_paw/main"
+REPO_RAW_BASE="https://raw.githubusercontent.com/<owner>/Terra_pet_zoo/main"
 mkdir -p "$PET_HOME"
 curl -fL "$REPO_RAW_BASE/pets/$PET_ID/pet.json" -o "$PET_HOME/pet.json"
 curl -fL "$REPO_RAW_BASE/pets/$PET_ID/spritesheet.webp" -o "$PET_HOME/spritesheet.webp"
@@ -51,7 +51,7 @@ test -f "$PET_HOME/pet.json" && test -f "$PET_HOME/spritesheet.webp"
 ```bash
 PET_ID="susie-paw"
 PET_HOME="${CODEX_HOME:-$HOME/.codex}/pets/$PET_ID"
-REPO_RAW_BASE="https://raw.githubusercontent.com/<owner>/susie_paw/main"
+REPO_RAW_BASE="https://raw.githubusercontent.com/<owner>/Terra_pet_zoo/main"
 mkdir -p "$PET_HOME"
 curl -fL "$REPO_RAW_BASE/pets/$PET_ID/pet.json" -o "$PET_HOME/pet.json"
 curl -fL "$REPO_RAW_BASE/pets/$PET_ID/spritesheet.webp" -o "$PET_HOME/spritesheet.webp"

@@ -16,7 +16,7 @@ Failed 状态视频预览：[preview/failed.mp4](preview/failed.mp4)
 
 ```bash
 PET_HOME="${CODEX_HOME:-$HOME/.codex}/pets/susie-paw"
-REPO_RAW_BASE="https://raw.githubusercontent.com/<owner>/susie_paw/main"
+REPO_RAW_BASE="https://raw.githubusercontent.com/<owner>/Terra_pet_zoo/main"
 mkdir -p "$PET_HOME"
 curl -fL "$REPO_RAW_BASE/pets/susie-paw/pet.json" -o "$PET_HOME/pet.json"
 curl -fL "$REPO_RAW_BASE/pets/susie-paw/spritesheet.webp" -o "$PET_HOME/spritesheet.webp"
